@@ -1,0 +1,29 @@
+#include<iostream>
+using1 namespace std;
+
+#include<vector>
+//vector< > name;
+int num;
+while(cin>>num){
+    nums.push.back(num);        //vector常见读入数据方法
+}
+
+nums.reserve(1);            //如果没有提前预设nums大小，不能直接用下标赋值
+nums[0]=1;
+nums.size() nums.capacity() nums.max_size();//size返回当前元素数量，max_size返回理论上的最大数量，capacity返回当前可以包含的最大元素数量
+nums.resize()                   //重新设置nums的大小
+nums.empty()   nums.clear()     //empty判断nums是否为空，clear清除nums所以元素；
+
+vector<int>::iterator iter;
+for(iter=nums.bigin();iter!=nums.end();iter++){     //end返回nums的最后一个迭代器指向的下一个位置
+    int temp=*iter;                                 //遍历方式，nums.at(下标)同样可以
+    cout<<temp;
+}
+
+nums.begin()  nums.end()  nums.find(查找开始地址，结束地址，查找元素)   //find返回指向所查找元素的迭代器，如果未查找到，返回nums.end()
+nums.find_if(查找开始地址，结束地址，一元函数)      //
+nums.sort(查找开始地址，结束地址，一元函数)
+
+nums.push_back()  nums.pop_back()
+nums.insert(插入地址，插入元素)or(插入地址，插入元素个数，插入元素)or(插入地址，要插入元素起始地址，要插入元素终止地址)
+nums.erase()   nums.swap()
